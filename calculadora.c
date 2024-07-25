@@ -28,20 +28,20 @@ int main( int argc, char *argv[])
     int opcao;
     float num1, num2, resultado;
     
-    printf("calculadora\n");
-    printf("-----------------------------------------\n");
-    printf("digite o valor do primeiro número: ");
+    printf(" Calculadora\n");
+    printf("----------------------------------------------------\n");
+    printf(" digite o valor do primeiro número: ");
     scanf("%f",&num1);
-    printf("digite o valor do segundo número: ");
+    printf(" digite o valor do segundo número: ");
     scanf("%f",&num2);
-    printf("-----------------------------------------\n");
-    printf("1. somar\n");
-    printf("2. subtrair\n");
-    printf("3. multiplicar\n");
-    printf("4. dividir\n");
-    printf("5. Calcular a Porcentagem\n");
+    printf("----------------------------------------------------\n");
+    printf(" 1. somar\n");
+    printf(" 2. subtrair\n");
+    printf(" 3. multiplicar\n");
+    printf(" 4. dividir\n");
+    printf(" 5. Calcular a Porcentagem\n");
     printf("\n");
-    printf("digite a opção desejada: ");
+    printf(" digite a opção desejada: ");
     scanf("%d",&opcao);
     
     switch(opcao){
@@ -66,12 +66,14 @@ int main( int argc, char *argv[])
             resultado = calcularPorcentagem(num1, num2);
             break;
         default:
-        printf("opção inválida\n");
+        printf("\n----------------------------------------------------\n")
+        printf(" opção inválida\n");
+        return 0;
         break;
         
     }
-    printf("\n-----------------------------------------\n");
-    printf("Resultado: %.2f\n", resultado);
+    printf("\n----------------------------------------------------\n");
+    printf(" Resultado: %.2f\n", resultado);
     printf("\n");
     
     
