@@ -66,7 +66,7 @@ int main( int argc, char *argv[])
             resultado = calcularPorcentagem(num1, num2);
             break;
         default:
-        printf("\n----------------------------------------------------\n")
+        printf("\n----------------------------------------------------\n");
         printf(" opção inválida\n");
         return 0;
         break;
